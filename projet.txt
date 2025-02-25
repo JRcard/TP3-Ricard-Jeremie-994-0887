@@ -1,0 +1,79 @@
+1. Nom, Description et Contact
+Nom du Restaurant:
+Sabores del Hogar
+
+Adresse:
+Calle Ficticia, 123 Ciudad de las Especias, México
+
+Téléphone:
++52 55 1234 5678
+
+Email:
+info@saboresdelhogar.mx
+
+Description en 8 mots ou moins:
+Delicias caseras que unen a la familia.
+
+2. Témoignages
+María Gómez: "Comida deliciosa y ambiente acogedor. Perfecto para familias."
+
+José Martínez: "Sabores auténticos y servicio excepcional. ¡Volveré pronto!"
+
+Ana Rodríguez: "El lugar ideal para compartir momentos inolvidables."
+
+Carlos Fernández: "Cada plato es una experiencia culinaria única."
+
+Lucía Ramírez: "Un restaurante que te hace sentir como en casa."
+
+Miguel Torres: "La mejor comida casera fuera de mi propia casa."
+
+3. Formulaire et Confirmation de Réservation
+Vocabulaire d'un Formulaire de Réservation:
+Nombre de personnes
+
+Fecha (Date)
+
+Hora (Heure)
+
+Nombre (Nom)
+
+Apellido (Nom de famille)
+
+Teléfono (Téléphone)
+
+Correo Electrónico (Email)
+
+Comentarios (Commentaires)
+
+Message de Confirmation de Réservation:
+Gracias por su reservación en Sabores del Hogar. 
+Estamos ansiosos por recibirle y brindarle una experiencia gastronómica inolvidable. 
+Si necesita hacer algún cambio, por favor contáctenos al +52 55 1234 5678.
+
+5. Menu
+Entrées
+Guacamole Tradicional - $8.00
+
+Tostadas de Ceviche - $10.00
+
+Sopa de Tortilla - $7.00
+
+Plats Principaux
+Tacos al Pastor - $12.00
+
+Enchiladas Verdes - $14.00
+
+Chiles Rellenos - $15.00
+
+Autres
+Postre del Día - $6.00
+
+Les couleurs principales utilisées dans le logo sont :
+
+Rouge chaud : #D32F2F
+
+Orange chaleureux : #F57C00
+
+Jaune doré : #FFC107
+
+Marron terre : #795548
