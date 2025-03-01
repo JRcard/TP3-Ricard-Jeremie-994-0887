@@ -24,7 +24,7 @@
     </header>
     <main>
         <h1>Reservación</h1>
-        <form>
+        <form action="confirmation.html" method="post">
             <label for="txtPrenom">Votre prénom :</label>
             <input type="text" id="txtPrenom" name="txtPrenom" required>
 
@@ -41,7 +41,10 @@
             <input type="date" id="dateReservation" name="dateReservation" required>
 
             <label for="radioEndroit">Section :</label>
-            <input type="radio" id="radioEndroit" name="radioEndroit" required>
+            <label for="radioEndroit">salle à manger</label>
+            <input type="radio" id="radioEndroit" name="radioEndroit" value="Salle à manger" required checked>
+            <label for="radioEndroit">Terraza</label>
+            <input type="radio" id="radioEndroit" name="radioEndroit" value="Terraza" required>
 
             <label for="selHeure">Heure :</label>
             <select id="selHeure" name="selHeure" required>
@@ -67,7 +70,7 @@
             <input type="email" id="email" name="email">
             <label>Cochez la case pour vous abonner à notre infolettre</label>
             <input type="checkbox" id="isNewsletter" name="isNewsletter">
-            <input type="submit" value="go">
+            <input type="submit" value="Envoyez">
         </form>
     </main>
     <footoer>
