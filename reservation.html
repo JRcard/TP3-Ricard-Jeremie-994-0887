@@ -24,31 +24,31 @@
     </header>
     <main>
         <h1>Reservación</h1>
-        <form action="confirmation.html" method="post">
-            <label for="txtPrenom">Votre prénom :</label>
+        <form action="confirmation.html">
+            <label for="txtPrenom">Nombre :</label>
             <input type="text" id="txtPrenom" name="txtPrenom" required>
 
-            <label for="txtNom">Votre nom :</label>
+            <label for="txtNom">Apellido</label>
             <input type="text" id="txtNom" name="txtNom" required>
 
-            <label for="telephone">Votre tléléphone :</label>
+            <label for="telephone">Teléfono</label>
             <input type="tel" id="telephone" name="telephone" required>
 
-            <label for="nbrPerson">Nombre de personne</label>
+            <label for="nbrPerson">Cuántas personas</label>
             <input type="number" id="nbrPerson" name="nbrPerson" min="1" value="1" required>
 
-            <label for="dateReservation">Date de réservation</label>
+            <label for="dateReservation">Fecha de reserva</label>
             <input type="date" id="dateReservation" name="dateReservation" required>
 
-            <label for="radioEndroit">Section :</label>
-            <label for="radioEndroit">salle à manger</label>
-            <input type="radio" id="radioEndroit" name="radioEndroit" value="Salle à manger" required checked>
+            <label for="radioEndroit">Sección :</label>
+            <label for="radioEndroit">Comedor</label>
+            <input type="radio" id="radioEndroit" name="radioEndroit" value="Comedor" required checked>
             <label for="radioEndroit">Terraza</label>
             <input type="radio" id="radioEndroit" name="radioEndroit" value="Terraza" required>
 
-            <label for="selHeure">Heure :</label>
+            <label for="selHeure">Hora :</label>
             <select id="selHeure" name="selHeure" required>
-                <option value="" disabled selected>Sélectionnez une heure</option>
+                <option value="" disabled selected>Selecciona una hora.</option>
                 <option value="12:00">12:00</option>
                 <option value="12:30">12:30</option>
                 <option value="13:00">13:00</option>
@@ -64,13 +64,13 @@
                 <option value="21:00">21:00</option>
             </select>
 
-            <label for="commentaire">Commentaire :</label>
+            <label for="commentaire">Comentarios :</label>
             <textarea id="commentaire" name="commentaire"></textarea>
-            <label for="email">Courriel</label>
+            <label for="email">Correo Electrónico</label>
             <input type="email" id="email" name="email">
-            <label>Cochez la case pour vous abonner à notre infolettre</label>
+            <label>Marque la casilla para suscribirte a nuestro boletín.</label>
             <input type="checkbox" id="isNewsletter" name="isNewsletter">
-            <input type="submit" value="Envoyez">
+            <input type="submit" value="Reservar">
         </form>
     </main>
     <footoer>
@@ -98,3 +98,5 @@
         </div>
     </footoer>
 </body>
+
+</html>
