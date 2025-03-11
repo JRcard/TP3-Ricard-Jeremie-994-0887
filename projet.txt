@@ -43,7 +43,7 @@ Teléfono (Téléphone)
 
 Correo Electrónico (Email)
 
-Comentarios (Commentaires)
+Notas adicionales (Commentaires)
 
 Message de Confirmation de Réservation:
 Gracias por su reservación en Sabores del Hogar. 
@@ -51,22 +51,37 @@ Estamos ansiosos por recibirle y brindarle una experiencia gastronómica inolvid
 Si necesita hacer algún cambio, por favor contáctenos al +52 55 1234 5678.
 
 5. Menu
-Entrées
+Entrantes
 Guacamole Tradicional - $8.00
 
 Tostadas de Ceviche - $10.00
 
 Sopa de Tortilla - $7.00
 
-Plats Principaux
+Platos principales
 Tacos al Pastor - $12.00
 
 Enchiladas Verdes - $14.00
 
 Chiles Rellenos - $15.00
 
-Autres
+Extra
 Postre del Día - $6.00
+
+Détails : Detalles
+
+Sous-total : Subtotal
+
+Taxes : IVA(Impuestos)
+
+Total : Total
+
+Commander : Ordenar
+Nombre del plato (Nom du plat)
+
+Precio (Prix)
+
+Cantidad (Quantité)
 
 Les couleurs principales utilisées dans le logo sont :
 
