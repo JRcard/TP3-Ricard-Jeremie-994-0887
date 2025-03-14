@@ -1,9 +1,19 @@
 /* Général */
 
+body {
+	background-color: #ffc107;
+}
+
 .container {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0px auto;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Sancreek", Times, serif;
 }
 
 /* Navigation */
@@ -15,6 +25,7 @@ header h1 {
 
 header a {
 	color: black;
+	font-family: "Sancreek", Times, serif;
 	font-size: 1.5rem;
 	padding: 5px 15px;
 }
@@ -26,7 +37,7 @@ header a:hover {
 }
 .flexNavigation {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 .menu {
@@ -41,5 +52,67 @@ header a:hover {
 
 .maCommande {
 	padding: 10px;
-	box-shadow: 2px 3px 3px 3px #ccc;
+	box-shadow: 2px 3px 3px 3px #d32f2f;
+}
+
+/* Accueil */
+
+.presentation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 100px;
+}
+
+.presentation img {
+	width: 62%;
+}
+
+.text_and_buttons {
+	display: flex;
+	flex-direction: column;
+	width: 34%;
+	align-items: stretch;
+}
+.presentation h2,
+.temoignage h2 {
+	font-size: 3rem;
+	margin: 10px 0px;
+}
+.presentation p {
+	font-size: 1.5rem;
+	margin: 10px 0px;
+}
+.buttons {
+	display: flex;
+	margin-top: 10px;
+}
+.presentation button {
+	background-color: #ffc107;
+	padding: 15px;
+	margin: 10px 20px 0px 0px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 4px #795548;
+}
+.presentation .commande {
+	background-color: #ac7707;
+}
+.presentation button a {
+	color: black;
+	font-family: "Roboto", courier, monospace;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.presentation button:hover {
+	background-color: #ac7707;
+}
+.presentation .commande:hover {
+	background-color: #ffc107;
+}
+
+.temoignage h3 {
+	color: #686565;
+	font-size: 1.8rem;
 }
