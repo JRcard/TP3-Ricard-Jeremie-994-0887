@@ -1,39 +1,43 @@
 /* Général */
 
 .container {
+	width: 90%;
 	max-width: 1200px;
-	width: 80%;
-}
-
-header {
-	display: flex;
-	justify-content: center;
+	margin: 0px auto;
 }
 
 /* Navigation */
 
-header nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 2%;
+nav h1 {
+	padding: 0px;
+	margin: 0px 0px 4px;
+	font-size: 0px;
+	width: 50%;
+	height: 0%;
 }
 
-header nav h1 {
-	margin: 5px;
-}
-
-header img {
-	width: 200px;
-}
 header a {
 	color: black;
 	font-size: 1.5rem;
 	padding: 5px;
 }
+header a:hover {
+	color: #ac7707;
+}
+.imgLogo {
+	width: 200px;
+}
+.flexNavigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .menu {
 	display: flex;
 	list-style: none;
+
+	justify-content: space-between;
+	align-items: center;
 }
 
 .focus {
