@@ -8,18 +8,15 @@
 
 /* Navigation */
 
-nav h1 {
-	padding: 0px;
-	margin: 0px 0px 4px;
+header h1 {
+	padding: 5px 15px;
 	font-size: 0px;
-	width: 50%;
-	height: 0%;
 }
 
 header a {
 	color: black;
 	font-size: 1.5rem;
-	padding: 5px;
+	padding: 5px 15px;
 }
 header a:hover {
 	color: #ac7707;
@@ -29,14 +26,12 @@ header a:hover {
 }
 .flexNavigation {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 .menu {
 	display: flex;
 	list-style: none;
-
-	justify-content: space-between;
 	align-items: center;
 }
 
