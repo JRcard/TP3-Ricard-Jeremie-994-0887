@@ -16,8 +16,6 @@ h3 {
 	font-family: "Sancreek", Times, serif;
 }
 
-/* Navigation */
-
 header h1 {
 	padding: 5px 15px;
 	font-size: 0px;
@@ -35,6 +33,36 @@ header a:hover {
 .img_logo {
 	width: 200px;
 }
+
+footer {
+	margin-top: 65px;
+}
+.divider {
+	width: 100%;
+	border-bottom: 2px solid black;
+}
+.footer_top,
+.footer_bottom {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer_bottom {
+	text-decoration: underline;
+}
+.footer_top div,
+.footer_bottom div {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.footer_bottom div span {
+	margin-left: 30px;
+}
+
+/* Navigation */
+
 .flex_navigation {
 	display: flex;
 	justify-content: space-between;
