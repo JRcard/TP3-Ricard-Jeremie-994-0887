@@ -15,74 +15,98 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="container">
     <header>
-        <div class="flexNavigation">
-            <a href="index.html"><img class="imgLogo" src="img/SaboresDelOhar_Logo.png" alt="Sabores Del Ohar"></a>
+        <div class="flex_navigation">
+            <a href="index.html"><img class="img_logo" src="img/SaboresDelOhar_Logo.png" alt="Sabores Del Ohar"></a>
             <nav>
-
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a class="focus" href="reservation.html">Reservación</a></li>
                     <li><a href="restaurant.html">Restaurante</a></li>
-                    <li><a class="maCommande" href="ma_commande.html">Mi pedido</a></li>
+                    <li><a class="ma_commande" href="ma_commande.html">Mi pedido</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <h1>Reservación</h1>
-        <form action="confirmation.html">
-            <label for="txtPrenom">Nombre :</label>
-            <input type="text" id="txtPrenom" name="txtPrenom" required>
+        <section>
+            <form class="flex_formulaire" action="confirmation.html">
+                <fieldset class="flex_field_nom">
+                    <div class="nom">
 
-            <label for="txtNom">Apellido</label>
-            <input type="text" id="txtNom" name="txtNom" required>
+                        <label for="txtPrenom" class="required">Nombre :</label>
+                        <input type="text" id="txtPrenom" name="txtPrenom" required>
 
-            <label for="telephone">Teléfono</label>
-            <input type="tel" id="telephone" name="telephone" required>
+                        <label for="txtNom" class="required">Apellido</label>
+                        <input type="text" id="txtNom" name="txtNom" required>
 
-            <label for="nbrPerson">Cuántas personas</label>
-            <input type="number" id="nbrPerson" name="nbrPerson" min="1" value="1" required>
-
-            <label for="dateReservation">Fecha de reserva</label>
-            <input type="date" id="dateReservation" name="dateReservation" required>
-
-            <label for="radioEndroit">Sección :</label>
-            <label for="radioEndroit">Comedor</label>
-            <input type="radio" id="radioEndroit" name="radioEndroit" value="Comedor" required checked>
-            <label for="radioEndroit">Terraza</label>
-            <input type="radio" id="radioEndroit" name="radioEndroit" value="Terraza" required>
-
-            <label for="selHeure">Hora :</label>
-            <select id="selHeure" name="selHeure" required>
-                <option value="" disabled selected>Selecciona una hora.</option>
-                <option value="12:00">12:00</option>
-                <option value="12:30">12:30</option>
-                <option value="13:00">13:00</option>
-                <option value="13:30">13:30</option>
-                <option value="17:00">17:00</option>
-                <option value="17:30">17:30</option>
-                <option value="18:00">18:00</option>
-                <option value="18:30">18:30</option>
-                <option value="19:00">19:00</option>
-                <option value="19:30">19:30</option>
-                <option value="20:00">20:00</option>
-                <option value="20:30">20:30</option>
-                <option value="21:00">21:00</option>
-            </select>
-
-            <label for="commentaire">Notas adicionales :</label>
-            <textarea id="commentaire" name="commentaire"></textarea>
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email">
-            <label>Marque la casilla para suscribirte a nuestro boletín.</label>
-            <input type="checkbox" id="isNewsletter" name="isNewsletter">
-            <input type="submit" value="Reservar">
-        </form>
+                    </div>
+                    <div class="telephone">
+                        <label for="telephone" class="required">Teléfono</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="nbrPerson" class="required">Cuántas personas</label>
+                        <input type="number" id="nbrPerson" name="nbrPerson" min="1" value="1" required>
+                    </div>
+                    <div>
+                        <label for="dateReservation" class="required">Fecha de reserva</label>
+                        <input type="date" id="dateReservation" name="dateReservation" required>
+                    </div>
+                    <div>
+                        <label for="radioEndroit" class="required">Sección :</label>
+                        <label for="radioEndroit">Comedor</label>
+                        <input type="radio" id="radioEndroit" name="radioEndroit" value="Comedor" required checked>
+                        <label for="radioEndroit">Terraza</label>
+                        <input type="radio" id="radioEndroit" name="radioEndroit" value="Terraza" required>
+                    </div>
+                    <div>
+                        <label for="selHeure" class="required">Hora :</label>
+                        <select id="selHeure" name="selHeure" required>
+                            <option value="" disabled selected>Selecciona una hora.</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div class="commentaires">
+                    <label for="commentaire">Notas adicionales :</label>
+                    <textarea id="commentaire" name="commentaire" rows="5"></textarea>
+                </div>
+                <fieldset>
+                    <div>
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="isNewsletter" name="isNewsletter">
+                        <label>Marque la casilla para suscribirte a nuestro boletín.</label>
+                    </div>
+                </fieldset>
+                <div class="button_submit">
+                    <p><span>*</span> es un campo obligatorio</p>
+                    <input type="submit" value="Reservar">
+                </div>
+            </form>
+        </section>
     </main>
-    <footoer>
-        <div>
+    <footer>
+        <div class="footer_top">
             <div>
                 <img>
                 <p>Dirigida por : Jérémie Ricard</p>
@@ -92,19 +116,17 @@
                 <img>
                 <img>
                 <img>
-
             </div>
-
         </div>
         <div class="divider"></div>
-        <div>
-            <p>Intégration web 1</p>
+        <div class="footer_bottom">
+            <p>Integración Web 1</p>
             <div>
-                <p>Cégep de Trois-Rivières</p>
-                <p>Hiver 2025</p>
+                <p>Cégep de Trois-Rivières <span>Invierno 2025</span></p>
+                <p></p>
             </div>
         </div>
-    </footoer>
+    </footer>
 </body>
 
 </html>

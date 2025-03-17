@@ -4,29 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sancreek&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Sabores del Hogar</title>
     <meta name="description" content="Disfruta de delicias caseras que unen y acercan a familiares y amigos.">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="container">
     <header>
-        <nav>
-            <a href="index.html"><img src="img/SaboresDelOhar_Logo.png" alt="Sabores Del Ohar"></a>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a class="focus" href="reservation.html">Reservación</a></li>
-                <li><a href="restaurant.html">Restaurante</a></li>
-                <li><a class="maCommande" href="ma_commande.html">Mi pedido</a></li>
-            </ul>
-        </nav>
+        <div class="flex_navigation">
+            <a href="index.html"><img class="img_logo" src="img/SaboresDelOhar_Logo.png" alt="Sabores Del Ohar"></a>
+            <nav>
+
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="focus" href="reservation.html">Reservación</a></li>
+                    <li><a href="restaurant.html">Restaurante</a></li>
+                    <li><a class="ma_commande" href="ma_commande.html">Mi pedido</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h3>Confirmación de su reserva</h3>
+    <main class="confirmation">
+        <h1>Confirmación de su reserva</h1>
     </main>
-    <footoer>
-        <div>
+    <footer>
+        <div class="footer_top">
             <div>
                 <img>
                 <p>Dirigida por : Jérémie Ricard</p>
@@ -36,19 +44,17 @@
                 <img>
                 <img>
                 <img>
-
             </div>
-
         </div>
         <div class="divider"></div>
-        <div>
-            <p>Intégration web 1</p>
+        <div class="footer_bottom">
+            <p>Integración Web 1</p>
             <div>
-                <p>Cégep de Trois-Rivières</p>
-                <p>Hiver 2025</p>
+                <p>Cégep de Trois-Rivières <span>Invierno 2025</span></p>
+                <p></p>
             </div>
         </div>
-    </footoer>
+    </footer>
 </body>
 
 </html>
