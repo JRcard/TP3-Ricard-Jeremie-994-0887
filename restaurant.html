@@ -16,41 +16,46 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="container">
     <header>
-        <div class="flexNavigation">
-            <a href="index.html"><img class="imgLogo" src="img/SaboresDelOhar_Logo.png" alt="Sabores Del Ohar"></a>
+        <div class="flex_navigation">
+            <a href="index.html"><img class="img_logo" src="img/SaboresDelOhar_Logo.png" alt="Sabores Del Ohar"></a>
             <nav>
-
                 <ul class="menu">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="reservation.html">Reservación</a></li>
                     <li><a class="focus" href="restaurant.html">Restaurante</a></li>
-                    <li><a class="maCommande" href="ma_commande.html">Mi pedido</a></li>
+                    <li><a class="ma_commande" href="ma_commande.html">Mi pedido</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <h1> Restaurante</h1>
         <section class="photos">
-            <ul>
+            <h1>Restaurante</h1>
+            <ul class="grid_photos">
                 <li><img src="img/salle_a_manger.png" alt="el comedor"></li>
                 <li><img src="img/bar.png" alt="el Bar"></li>
-                <li><img src="img/terasse.png" alt="la terraza"></li>
-                <li><img src="img/Tostadas de Ceviche.png" alt="Tostadas de Ceviche"></li>
+                <li class="terasse"><img src="img/terasse.png" alt="la terraza"></li>
+                <li class="tostadas"><img src="img/Tostadas de Ceviche.png" alt="Tostadas de Ceviche"></li>
                 <li><img src="img/Tacos al Pastor.png" alt="Tacos al Pastor"></li>
                 <li><img src="img/Postre del Día.png" alt="Postre del Día"></li>
             </ul>
         </section>
         <section class="contact">
-            <div>
-                <h3>dirección</h3>
-                <p>Calle Ficticia, 123 Ciudad de las Especias, México</p>
-                <h3>teléfono</h3>
-                <a href="tel:+525512345678">+52 55 1234 5678</a>
-                <h3>correo electrónico</h3>
-                <a href="mailto:info@saboresdelhogar.mx">info@saboresdelhogar.mx</a>
+            <div class="coordonnées">
+                <div>
+                    <h2>dirección</h2>
+                    <p>Calle Ficticia, 123 Ciudad de las Especias, México</p>
+                </div>
+                <div>
+                    <h3>teléfono</h3>
+                    <a href="tel:+525512345678">+52 55 1234 5678</a>
+                </div>
+                <div>
+                    <h3>correo electrónico</h3>
+                    <a href="mailto:info@saboresdelhogar.mx">info@saboresdelhogar.mx</a>
+                </div>
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5322.319155788366!2d-99.17393447032268!3d19.393041407220824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurante!5e0!3m2!1sfr!2sca!4v1740955282797!5m2!1sfr!2sca"
@@ -58,8 +63,8 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
-    <footoer>
-        <div>
+    <footer>
+        <div class="footer_top">
             <div>
                 <img>
                 <p>Dirigida por : Jérémie Ricard</p>
@@ -69,19 +74,17 @@
                 <img>
                 <img>
                 <img>
-
             </div>
-
         </div>
         <div class="divider"></div>
-        <div>
-            <p>Intégration web 1</p>
+        <div class="footer_bottom">
+            <p>Integración Web 1</p>
             <div>
-                <p>Cégep de Trois-Rivières</p>
-                <p>Hiver 2025</p>
+                <p>Cégep de Trois-Rivières <span>Invierno 2025</span></p>
+                <p></p>
             </div>
         </div>
-    </footoer>
+    </footer>
 </body>
 
 </html>
