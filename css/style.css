@@ -13,7 +13,13 @@ body {
 h1,
 h2,
 h3 {
+	color: #131313;
 	font-family: "Sancreek", Times, serif;
+}
+
+p {
+	color: #1e1e1e;
+	font-family: "Roboto", courier, monospace;
 }
 
 header h1,
@@ -23,7 +29,7 @@ header a {
 }
 
 .menu a {
-	color: black;
+	color: #131313;
 	font-family: "Sancreek", Times, serif;
 	font-size: 1.5rem;
 	padding: 5px 15px;
@@ -37,6 +43,7 @@ header a {
 
 footer {
 	margin-top: 65px;
+	font-family: "Roboto", courier, monospace;
 }
 .divider {
 	width: 100%;
@@ -131,7 +138,7 @@ footer {
 	background-color: #d32f2f;
 }
 .presentation button a {
-	color: black;
+	color: #131313;
 	font-family: "Roboto", courier, monospace;
 	font-size: 1rem;
 	font-weight: 700;
@@ -271,4 +278,73 @@ form p span {
 .coordonnées {
 	display: flex;
 	flex-direction: column;
+}
+.coordonnées h2 {
+	margin-bottom: 0px;
+}
+
+.coordonnées p {
+	margin-top: 0px;
+}
+
+.coordonnées .focus {
+	color: #131313;
+	font-family: "Roboto", courier, monospace;
+	text-decoration: none;
+}
+
+/* Ma commande */
+.page_ma_commande {
+	display: flex;
+	justify-content: space-between;
+}
+.section_menu {
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+}
+.section_menu div {
+	margin: 20px 0px;
+}
+.section_menu h3 {
+	margin: 0px;
+}
+table {
+	width: 100%;
+	margin: 20px 0px;
+}
+thead tr,
+tbody tr {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 10px 0px;
+	padding-left: 5px;
+}
+tbody tr {
+	text-align: center;
+}
+tbody tr td {
+	padding: 10px 0px;
+}
+thead tr > :first-child,
+tbody tr > :first-child {
+	text-align: left;
+}
+table thead,
+table tbody > :nth-child(2) {
+	background-color: #ac7707;
+}
+.addition {
+	width: 35%;
+}
+.addition div {
+	background-color: #ac7707;
+	padding: 10px 0px 0px 10px;
+}
+.button_commander a {
+	color: #131313;
+	font-family: "Roboto", courier, monospace;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
 }
