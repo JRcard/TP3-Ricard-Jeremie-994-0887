@@ -28,19 +28,33 @@ header a {
 	font-size: 0px;
 }
 
-.menu a {
-	color: #131313;
-	font-family: "Sancreek", Times, serif;
-	font-size: 1.5rem;
-	padding: 5px 15px;
+button {
+	font-family: "Roboto", courier, monospace;
+	font-size: 1rem;
+	background-color: #ffc107;
+	padding: 15px;
+	margin: 10px 20px 0px 0px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 4px #795548;
 	position: relative;
 }
-.menu a:hover {
-	bottom: 2px;
+button:hover {
+	box-shadow: 2px 3px 3px 4px #795548 inset;
+	top: 2px;
 }
-.img_logo {
-	width: 200px;
+button a {
+	text-decoration: none;
 }
+a {
+	color: #131313;
+	font-family: "Roboto", courier, monospace;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+/* FOOTER */
 
 footer {
 	margin-top: 65px;
@@ -71,28 +85,39 @@ footer {
 }
 
 /* Navigation */
-
 .flex_navigation {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.menu a {
+	font-family: "Sancreek", Times, serif;
+	font-size: 1.5rem;
+	padding: 5px 15px;
+}
+.menu a:hover {
+	color: #d32f2f;
+}
+.img_logo {
+	width: 200px;
 }
 .menu {
 	display: flex;
 	list-style: none;
 	align-items: center;
 }
-
 .focus {
 	text-decoration: none;
 }
-
-.ma_commande {
+a.ma_commande {
 	padding: 10px;
 	box-shadow: 2px 3px 3px 3px #d32f2f;
+	position: relative;
 }
-.ma_commande:hover {
-	box-shadow: 2px 3px 3px 3px #d32f2f inset;
+a.ma_commande:hover {
+	color: #131313;
+	box-shadow: 2px 3px 3px 3px #686565 inset;
+	top: 2px;
 }
 
 /* Accueil */
@@ -122,37 +147,23 @@ footer {
 	color: #686565;
 	font-size: 1.8rem;
 }
-.presentation p {
+.presentation h3 {
+	font-family: "roboto", courier, monospace;
 	font-size: 1.5rem;
+	font-weight: 400;
 	margin: 10px 0px;
 }
 .buttons {
 	display: flex;
 	margin-top: 10px;
 }
-.presentation button {
-	background-color: #ffc107;
-	padding: 15px;
-	margin: 10px 20px 0px 0px;
-	border: none;
-	border-radius: 5px;
-	box-shadow: 2px 3px 3px 4px #795548;
-	position: relative;
+.commande {
+	background-color: #ac7707;
 }
-.presentation .commande {
-	background-color: #d32f2f;
-}
-.presentation button a {
+a.commande:hover {
 	color: #131313;
-	font-family: "Roboto", courier, monospace;
-	font-size: 1rem;
-	font-weight: 700;
-	letter-spacing: 1px;
 }
-.presentation button:hover {
-	box-shadow: 2px 3px 3px 4px #795548 inset;
-	bottom: 2px;
-}
+
 .temoignage {
 	margin-top: 20px;
 }
@@ -208,6 +219,8 @@ form fieldset div {
 	padding: 10px 0px;
 }
 form label {
+	font-family: "Roboto", courier, monospace;
+	font-size: 1rem;
 	margin: 10px 0px 10px 5px;
 }
 .flex_field_nom {
@@ -230,16 +243,17 @@ form label {
 form input[type="submit"] {
 	font-family: "Roboto", courier, monospace;
 	font-size: 1rem;
-	background-color: #d32f2f;
-	box-shadow: 2px 3px 3px 3px #686565;
+	background-color: #ffc107;
 	padding: 15px;
-	border-radius: 5px;
+	margin: 10px 20px 0px 0px;
 	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 4px #d32f2f;
 	position: relative;
 }
 form input[type="submit"]:hover {
 	box-shadow: 2px 3px 3px 3px #686565 inset;
-	bottom: 2px;
+	top: 2px;
 }
 form p span {
 	color: #d32f2f;
@@ -291,15 +305,14 @@ form p span {
 .coordonnées h2 {
 	margin-bottom: 0px;
 }
-
 .coordonnées p {
 	margin-top: 0px;
 }
-
-.coordonnées .focus {
-	color: #131313;
-	font-family: "Roboto", courier, monospace;
+.coordonnées a {
 	text-decoration: none;
+}
+.coordonnées a:hover {
+	text-decoration: underline;
 }
 
 /* Ma commande */
@@ -348,12 +361,5 @@ table tbody > :nth-child(2) {
 }
 .addition div {
 	background-color: #ac7707;
-	padding: 10px 0px 0px 10px;
-}
-.button_commander a {
-	color: #131313;
-	font-family: "Roboto", courier, monospace;
-	font-size: 1rem;
-	font-weight: 700;
-	letter-spacing: 1px;
+	padding: 10px 0px 10px 10px;
 }
