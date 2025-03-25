@@ -35,40 +35,42 @@
         <section>
             <form class="flex_formulaire" action="confirmation.html">
                 <fieldset class="flex_field_nom">
-                    <div class="nom">
-
-                        <label for="txtPrenom" class="required">Nombre :</label>
-                        <input type="text" id="txtPrenom" name="txtPrenom" required>
-
-                        <label for="txtNom" class="required">Apellido :</label>
-                        <input type="text" id="txtNom" name="txtNom" required>
+                    <div class="nom_complet">
+                        <div class="prenom">
+                            <label for="txtPrenom" class="required">Nombre </label>
+                            <input type="text" id="txtPrenom" name="txtPrenom" required>
+                        </div>
+                        <div class="nom">
+                            <label for="txtNom" class="required">Apellido </label>
+                            <input type="text" id="txtNom" name="txtNom" required>
+                        </div>
 
                     </div>
                     <div class="telephone">
-                        <label for="telephone" class="required">Teléfono :</label>
+                        <label for="telephone" class="required">Teléfono </label>
                         <input type="tel" id="telephone" name="telephone" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div>
-                        <label for="nbrPerson" class="required">Cuántas personas :</label>
+                        <label for="nbrPerson" class="required">Cuántas personas </label>
                         <input type="number" id="nbrPerson" name="nbrPerson" min="1" value="1" required>
                     </div>
                     <div>
-                        <label for="dateReservation" class="required">Fecha de reserva :</label>
+                        <label for="dateReservation" class="required">Fecha de reserva </label>
                         <input type="date" id="dateReservation" name="dateReservation" required>
                     </div>
                     <div>
-                        <label for="radioEndroit" class="required">Sección :</label>
+                        <label for="radioEndroit" class="required">Sección </label>
                         <label for="radioEndroit">Comedor</label>
                         <input type="radio" id="radioEndroit" name="radioEndroit" value="Comedor" required checked>
                         <label for="radioEndroit">Terraza</label>
                         <input type="radio" id="radioEndroit" name="radioEndroit" value="Terraza" required>
                     </div>
                     <div>
-                        <label for="selHeure" class="required">Hora :</label>
+                        <label for="selHeure" class="required">Hora </label>
                         <select id="selHeure" name="selHeure" required>
-                            <option value="" disabled selected>Selecciona una hora.</option>
+                            <option value="" disabled selected>Selecciona una hora </option>
                             <option value="12:00">12:00</option>
                             <option value="12:30">12:30</option>
                             <option value="13:00">13:00</option>
@@ -86,12 +88,12 @@
                     </div>
                 </fieldset>
                 <div class="commentaires">
-                    <label for="commentaire">Notas adicionales :</label>
+                    <label for="commentaire">Notas adicionales </label>
                     <textarea id="commentaire" name="commentaire" rows="5"></textarea>
                 </div>
                 <fieldset>
                     <div>
-                        <label for="email">Correo Electrónico :</label>
+                        <label for="email">Correo Electrónico </label>
                         <input type="email" id="email" name="email">
                     </div>
                     <div>

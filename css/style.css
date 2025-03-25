@@ -243,7 +243,7 @@ a.commande:hover {
 	align-content: center;
 }
 form fieldset {
-	width: 55%;
+	width: 60%;
 	max-width: 550px;
 	margin: 20px auto;
 	padding: 15px 5px;
@@ -257,17 +257,25 @@ form fieldset div {
 form label {
 	font-family: "Roboto", courier, monospace;
 	font-size: 1rem;
-	margin: 10px 0px 10px 5px;
+	margin: 10px 5px;
 }
 .flex_field_nom {
 	display: flex;
 	flex-direction: column;
 }
+.nom_complet,
+.prenom,
+.nom {
+	display: flex;
+	align-items: center;
+}
+
 .commentaires {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	width: 550px;
+	width: 60%;
+	max-width: 550px;
 }
 .required::before {
 	content: "*";
@@ -277,8 +285,9 @@ form label {
 .button_submit {
 	display: flex;
 	justify-content: space-between;
-	margin: auto;
-	width: 550px;
+	margin: 0px auto;
+	width: 95%;
+	max-width: 560px;
 }
 form input[type="submit"] {
 	font-family: "Roboto", courier, monospace;
@@ -436,12 +445,25 @@ table tbody > :nth-child(2) {
 
 /* Médias Query */
 @media screen and (max-width: 960px) {
-	form fieldset {
-		width: 65%;
+	form fieldset,
+	.commentaires {
+		width: 90%;
+	}
+	.menu {
+		display: none;
+	}
+	.nom_complet {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.telephone {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
 	}
 }
-@media screen and (max-width: 900px) {
-	.flex_field_nom {
-		flex-direction: row;
-	}
+@media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 570px) {
 }
