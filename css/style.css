@@ -3,9 +3,11 @@
 @keyframes rotate {
 	from {
 		rotate: 0deg;
+		top: 0px;
 	}
 	to {
 		rotate: 5deg;
+		top: 5px;
 	}
 }
 
@@ -122,7 +124,6 @@ footer {
 }
 .a_img_logo:hover {
 	box-shadow: 2px 3px 4px 4px #686565;
-	top: 5px;
 	animation-name: rotate;
 	animation-duration: 0.8s;
 	animation-fill-mode: forwards;
@@ -240,11 +241,11 @@ a.commande:hover {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	flex-wrap: wrap;
 }
 form fieldset {
-	width: 45%;
-	margin: 20px 0px;
+	width: 55%;
+	max-width: 550px;
+	margin: 20px auto;
 	padding: 15px 5px;
 	border-color: #795548;
 	border-radius: 10px;
@@ -265,6 +266,8 @@ form label {
 .commentaires {
 	display: flex;
 	flex-direction: column;
+	margin: auto;
+	width: 550px;
 }
 .required::before {
 	content: "*";
@@ -274,6 +277,8 @@ form label {
 .button_submit {
 	display: flex;
 	justify-content: space-between;
+	margin: auto;
+	width: 550px;
 }
 form input[type="submit"] {
 	font-family: "Roboto", courier, monospace;
@@ -427,4 +432,16 @@ table tbody > :nth-child(2) {
 }
 .button_commander {
 	margin: 0px 0px 15px 15px;
+}
+
+/* Médias Query */
+@media screen and (max-width: 960px) {
+	form fieldset {
+		width: 65%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.flex_field_nom {
+		flex-direction: row;
+	}
 }
