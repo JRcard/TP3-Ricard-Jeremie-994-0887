@@ -146,6 +146,14 @@ a.ma_commande:hover {
 	box-shadow: 2px 3px 3px 3px #686565 inset;
 	top: 2px;
 }
+.burger {
+	display: none;
+	width: 60px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	right: 15%;
+}
 
 /* Accueil */
 
@@ -363,7 +371,9 @@ form p span {
 .coordonnées a:hover {
 	text-decoration: underline;
 }
-
+iframe {
+	width: 100%;
+}
 /* Ma commande */
 .page_ma_commande {
 	display: flex;
@@ -452,6 +462,9 @@ table tbody > :nth-child(2) {
 	.menu {
 		display: none;
 	}
+	.burger {
+		display: inline-block;
+	}
 	.nom_complet {
 		flex-direction: column;
 		align-items: flex-start;
@@ -462,7 +475,46 @@ table tbody > :nth-child(2) {
 		align-items: center;
 	}
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 770px) {
+	.buttons {
+		flex-direction: column;
+	}
+	.grid_temoignage {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 20px;
+		row-gap: 15px;
+	}
+	.carte_entete img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.presentation {
+		flex-direction: column;
+		margin: 40px 0px 55px 0px;
+	}
+	.presentation img {
+		width: 100%;
+	}
+	.text_and_buttons {
+		width: 100%;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	.buttons {
+		flex-direction: row;
+	}
+	.photos {
+		padding-bottom: 25px;
+	}
+	.contact {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.coordonnées {
+		margin-bottom: 50px;
+	}
 }
 
 @media screen and (max-width: 570px) {
