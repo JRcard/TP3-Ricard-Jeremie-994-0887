@@ -39,7 +39,7 @@ header a {
 	font-size: 0px;
 }
 
-button {
+.mon_bouton {
 	font-family: "Roboto", courier, monospace;
 	font-size: 1rem;
 	background-color: #ffc107;
@@ -50,11 +50,11 @@ button {
 	box-shadow: 2px 3px 3px 4px #795548;
 	position: relative;
 }
-button:hover {
+.mon_bouton:hover {
 	box-shadow: 2px 3px 3px 4px #795548 inset;
 	top: 2px;
 }
-button a {
+.mon_bouton a {
 	text-decoration: none;
 }
 a {
@@ -96,11 +96,11 @@ footer {
 	margin-left: 30px;
 }
 .socials {
-	width: 2.5%;
+	width: 15px;
 	margin: 0px 5px;
 }
 .icons {
-	width: 7%;
+	width: 15px;
 	margin: 0px 5px 0px 0px;
 }
 
@@ -192,7 +192,7 @@ a.ma_commande:hover {
 	display: flex;
 	margin-top: 10px;
 }
-.buttons button::before {
+.mon_bouton::before {
 	content: "+";
 	font-family: "roboto", courier, monospace;
 	font-size: 1.5rem;
@@ -420,16 +420,16 @@ table tbody > :nth-child(2) {
 	width: 35%;
 }
 .addition h2 {
-	padding: 15px 15px;
+	padding: 5px 15px;
 }
 .addition div {
 	background-color: #ac7707;
 	border-radius: 5px;
+	padding: 5px 0px 40px 0px;
 }
 
 .addition table {
 	width: 100%;
-	margin: 20px 0px;
 }
 
 .addition tbody tr {
@@ -450,7 +450,20 @@ table tbody > :nth-child(2) {
 	padding: 15px 0px;
 }
 .button_commander {
-	margin: 0px 0px 15px 15px;
+	font-family: "Roboto", courier, monospace;
+	font-size: 1rem;
+	background-color: #ffc107;
+	padding: 15px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 3px 3px 4px #795548;
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+.button_commander:hover {
+	box-shadow: 2px 3px 3px 4px #795548 inset;
+	top: 12px;
 }
 
 /* Médias Query */
@@ -473,6 +486,27 @@ table tbody > :nth-child(2) {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+	}
+	.flex_field_nom {
+		flex-direction: row;
+	}
+	.grid_photos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	.terasse {
+		grid-column: 1;
+		grid-row: 1;
+		padding: 0px;
+	}
+	.tostadas {
+		grid-column: 1;
+		grid-row: 3;
+		padding: 0px;
+	}
+	.page_ma_commande {
+		font-size: 1rem;
 	}
 }
 @media screen and (max-width: 770px) {
@@ -515,7 +549,36 @@ table tbody > :nth-child(2) {
 	.coordonnées {
 		margin-bottom: 50px;
 	}
+	.grid_photos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+	}
+	.terasse {
+		grid-column: 1 / span 2;
+		grid-row: 1 / span 2;
+		padding: 0px;
+	}
+	.tostadas {
+		grid-column: 1 / span 2;
+		grid-row: 3 / span 2;
+		padding: 0px;
+	}
 }
 
 @media screen and (max-width: 570px) {
+	.flex_field_nom {
+		flex-direction: column;
+	}
+	.button_commander {
+		width: 80%;
+	}
+	.button_commander a {
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width: 485px) {
+	.icons {
+		display: none;
+	}
 }
